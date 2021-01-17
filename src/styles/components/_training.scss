@@ -27,11 +27,15 @@
   }
 
   &__container {
-    width: 80%;
+    width: 90%;
+    max-width: 140rem;
     height: fit-content;
     margin: auto;
     display: flex;
     justify-content: space-between;
+
+    @include media(super-screen) {
+    }
 
     @include media(tab-land) {
       width: 95%;
@@ -40,6 +44,7 @@
     @include media(tab-port) {
       flex-direction: column;
       align-items: center;
+      width: 100%;
     }
   }
 
@@ -67,12 +72,8 @@
     }
 
     @include media(tab-port) {
-      width: 85%;
-      margin: 2rem;
-    }
-
-    @include media(phone) {
-      width: 100%;
+      width: 95%;
+      max-width: 450px;
       margin: 2rem;
     }
 
@@ -120,20 +121,24 @@
 
     &--button {
       display: inline-block;
-      margin-bottom: 2rem;
-      background-color: $color-grey-light;
+      margin-bottom: 3rem;
+      background-image: linear-gradient(
+        to top left,
+        rgba($color-sass-1, 0.6),
+        rgba($color-sass-2, 0.6)
+      );
       font-size: 2rem;
-      padding: 1.5rem;
+      padding: 2rem;
       width: fit-content;
       border-radius: 3rem;
-      filter: brightness(90%);
 
       transition: all 0.3s ease;
 
       &-text {
         display: inline-block;
         transition: all 0.3s ease;
-        color: $color-black;
+        color: $color-white;
+        font-weight: 500;
       }
 
       &:hover {
@@ -148,9 +153,6 @@
       @include media(tab-port) {
         display: none;
       }
-    }
-    &:hover &--button {
-      filter: brightness(100%);
     }
   }
 

@@ -8,6 +8,10 @@
   padding: 5rem;
   text-align: center;
 
+  @include media(super-screen) {
+    max-width: 120rem;
+  }
+
   @include media(tab-land) {
     width: 75%;
     padding: 0;
@@ -15,6 +19,10 @@
   @include media(tab-port) {
     width: 90%;
     min-width: 90%;
+    padding: 0;
+  }
+  @include media(tab-port) {
+    width: 100%;
     padding: 0;
   }
 
@@ -29,7 +37,7 @@
 
   &__card {
     width: 26rem;
-    height: 40rem;
+    height: 44rem;
     background-color: transparent;
     color: $color-white;
     transition: all 0.8s;
@@ -44,7 +52,7 @@
       margin: 2rem auto;
     }
     @include media(phone) {
-      width: 100%;
+      width: 90%;
     }
 
     &:hover {

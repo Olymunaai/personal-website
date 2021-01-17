@@ -20,6 +20,11 @@
       @content;
     }
   }
+  @if $size == super-screen {
+    @media (min-width: 2560px) {
+      @content;
+    }
+  }
   @if $size == tab-land {
     @media (max-width: 1200px) {
       @content;

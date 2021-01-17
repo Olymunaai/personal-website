@@ -16,6 +16,13 @@ html {
   @include media(phone) {
     font-size: 44%;
   }
+
+  @include media(big-screen) {
+    font-size: 75.5%;
+  }
+  @include media(super-screen) {
+    font-size: 85%;
+  }
 }
 
 .section__title {
