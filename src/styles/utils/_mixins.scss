@@ -1,0 +1,38 @@
+@import "../utils/variables.scss";
+
+@mixin center-element {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// MEDIA QUERIES
+
+// 0-600
+// 600-900
+// 900-1200
+// 1800+
+
+@mixin media($size) {
+  @if $size == big-screen {
+    @media (min-width: 1800px) {
+      @content;
+    }
+  }
+  @if $size == tab-land {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  }
+  @if $size == tab-port {
+    @media (max-width: 900px) {
+      @content;
+    }
+  }
+  @if $size == phone {
+    @media (max-width: 600px) {
+      @content;
+    }
+  }
+}

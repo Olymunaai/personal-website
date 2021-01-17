@@ -1,0 +1,44 @@
+@import "../utils/variables.scss";
+@import "../utils/mixins.scss";
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+  color: $color-black;
+
+  @include media(tab-land) {
+    font-size: 52.5%;
+  }
+
+  @include media(tab-port) {
+    font-size: 47%;
+  }
+  @include media(phone) {
+    font-size: 44%;
+  }
+}
+
+.section__title {
+  font-size: 6rem;
+  font-weight: 300;
+  margin-bottom: 6rem;
+  color: transparent;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(53, 57, 94, 0.8),
+    rgba(26, 24, 73, 0.8)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+
+  @include media(tab-port) {
+    font-size: 5.5rem;
+  }
+  @include media(phone) {
+    font-size: 5rem;
+  }
+}
