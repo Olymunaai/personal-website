@@ -16,7 +16,7 @@
 
 @mixin media($size) {
   @if $size == big-screen {
-    @media (min-width: 1800px) {
+    @media (min-width: 2000px) {
       @content;
     }
   }
