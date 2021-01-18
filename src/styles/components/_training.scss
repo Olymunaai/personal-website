@@ -63,8 +63,9 @@
     background-color: $color-white;
     border-radius: 0.5rem;
     overflow: hidden;
-    box-shadow: 0 1rem 2rem
-      rgba($color-black, 0.2);
+
+    @include default-shadow;
+
     transition: all 0.5s ease;
 
     @include media(tab-land) {
@@ -83,8 +84,7 @@
 
       @include media(tab-port) {
         filter: brightness(100%);
-        box-shadow: 0 1rem 2rem
-          rgba($color-black, 0.2);
+        background-color: $color-white;
       }
     }
 

@@ -7,10 +7,10 @@ const Skills = () => {
             title: "React JS",
             class: "skills__card--react",
             key: 1,
-            subSkills: ["Function Components", "Component-level-state", "Redux State Management", "Full MERN Stack Development experience", "API Requests", "React-router-DOM"]
+            subSkills: ["Function Components", "Component-level-state", "Redux State Management", "Full MERN Stack Development experience", "API Requests", "React-Router-DOM"]
         },
         {
-            title: "SASS & CSS5",
+            title: "SASS & CSS",
             class: "skills__card--sass",
             key: 2,
             subSkills: ["SCSS Syntax", "Responsive Design", "BEM Naming", "Grid & Flexbox", "Keyframe Animation", "Mixins", "REM sizing"]
@@ -19,7 +19,7 @@ const Skills = () => {
             title: "Node JS",
             class: "skills__card--node",
             key: 3,
-            subSkills: ["Express JS", "Mongoose", "Full MERN Stack Development experience", "Nodemailer", "Node Package Manager & Command Line", "CRUD Functionality"]
+            subSkills: ["Express JS", "Mongoose", "JWT Authentication", "Nodemailer Implementation", "Node Package Manager & Command Line", "CRUD Functionality"]
         }
     ]
 

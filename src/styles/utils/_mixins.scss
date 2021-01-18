@@ -7,6 +7,11 @@
   transform: translate(-50%, -50%);
 }
 
+@mixin default-shadow {
+  box-shadow: 0 1.5rem 2rem
+    rgba($color-black, 0.2);
+}
+
 // MEDIA QUERIES
 
 // 0-600

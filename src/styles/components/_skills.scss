@@ -73,7 +73,7 @@
 
     &:hover &--back {
       transform: rotateY(0deg);
-      box-shadow: 0 2rem 3rem rgba(#000, 0.3);
+      box-shadow: 0 2rem 3.5rem rgba(#000, 0.3);
 
       @include media(tab-port) {
         transform: none;
@@ -89,7 +89,7 @@
       height: 100%;
       width: 100%;
       transition: all 0.8s;
-      box-shadow: 0 1.5rem 2rem rgba(#000, 0.2);
+      @include default-shadow;
       backface-visibility: hidden;
       -webkit-backface-visibility: hidden;
       overflow: hidden;
