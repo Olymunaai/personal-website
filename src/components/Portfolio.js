@@ -5,7 +5,7 @@ const Portfolio = () => {
     const projects = [
         {
             title: "cartoonbnb",
-            img: "/img/cartoonbnb.jpg",
+            img: "/img/bnb.jpg",
             info: "The cartoonbnb project was based from websites such as airbnb and other booking companies. The purpose of building this was to learn how to make my own carousel without the use of a style library. It was also a good exercise for using grid, flexbox and media queries. After learning Sass and further CSS techniques, I revisited this project so that I could make some changes to the primary sizing and utilise mixins and variables.",
             link: "https://master.d3dxe4akplo0am.amplifyapp.com/",
             key:1
