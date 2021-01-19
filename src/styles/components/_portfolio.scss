@@ -1,0 +1,158 @@
+@import "../utils/variables.scss";
+@import "../utils/mixins.scss";
+
+.portfolio {
+  width: 100%;
+  background-color: $color-white;
+
+  &__title {
+    padding-top: 5rem;
+  }
+
+  &__intro {
+    margin: auto;
+    width: 60%;
+    font-size: 2rem;
+
+    @include media(tab-port) {
+      width: 80%;
+    }
+
+    @include media(phone) {
+      width: 90%;
+    }
+  }
+
+  &__container {
+    width: 100%;
+    max-width: 1040px;
+    margin: auto;
+    padding: 5rem 0;
+    display: flex;
+    height: fit-content;
+    justify-content: space-around;
+
+    @include media(tab-port) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__card {
+    width: 45%;
+    max-width: 450rem;
+
+    background-image: linear-gradient(
+      to bottom left,
+      darken($color-sass-1, 0%),
+      darken($color-sass-2, 0%)
+    );
+
+    cursor: pointer;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    @include media(tab-port) {
+      width: 90%;
+      max-width: 70rem;
+      margin-bottom: 3rem;
+    }
+
+    &--image {
+      transition: all 0.4s ease;
+      filter: opacity(15%);
+      object-fit: cover;
+      width: 100%;
+
+      // &:hover ~ .portfolio__card--title {
+      // }
+    }
+
+    &--title {
+      font-size: 4rem;
+      font-weight: 400;
+      color: $color-white;
+      @include center-element;
+      // opacity: 0;
+      // visibility: hidden;
+      transition: all 0.4s ease;
+    }
+
+    // &:hover > &--title {
+    //   color: red;
+    // }
+
+    // &:hover > &--image {
+    //   filter: brightness(20%);
+    // }
+  }
+
+  //POPUP
+
+  &__popup {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgba($color-black, 0.6);
+    z-index: 20;
+    text-align: center;
+
+    &:target {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    &--info-container {
+      padding: 2rem;
+    }
+
+    &--container {
+      width: 60rem;
+      height: fit-content;
+      background-color: $color-white;
+      @include center-element;
+    }
+
+    &--image {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    &--title {
+      font-size: 3rem;
+      padding: 1rem;
+      color: $color-react-1;
+    }
+
+    &--info {
+      font-size: 2rem;
+    }
+
+    &--link {
+      font-size: 2rem;
+      padding: 1rem;
+
+      & a {
+        text-decoration: none;
+        color: $color-react-1;
+        font-weight: 600;
+        display: inline-block;
+        transition: all 0.3s ease;
+
+        &:hover {
+          transform: scale(1.15);
+        }
+      }
+    }
+  }
+}

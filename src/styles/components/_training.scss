@@ -3,7 +3,7 @@
 
 .training {
   height: fit-content;
-  padding-bottom: 7rem;
+  padding: 10rem;
   background-image: linear-gradient(
     to bottom right,
     rgba($color-sass-1, 0.7),
@@ -24,6 +24,12 @@
       100% 100%,
       0% 100%
     );
+
+    padding: 10rem 5rem;
+  }
+
+  @include media(phone) {
+    padding: 5rem 0;
   }
 
   &__container {
@@ -49,7 +55,8 @@
   }
 
   &__title {
-    padding-top: 25rem;
+    margin-top: 15rem;
+    padding-top: 10rem;
   }
 
   &__entry {
