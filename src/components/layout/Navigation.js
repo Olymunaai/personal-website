@@ -28,7 +28,7 @@ const Navigation = () => {
                     <li className="nav__list--item" ><a href="#home" className="nav__list--link"  onClick={toggle}>Home</a></li>
                     <li className="nav__list--item"><a href="#skills" className="nav__list--link" onClick={toggle}>Skills</a></li>
                     <li className="nav__list--item"><a href="#training" className="nav__list--link" onClick={toggle}>Training</a></li>
-                    {/* <li className="nav__list--item"><a href="!#" className="nav__list--link" onClick={toggle}>Contact</a></li> */}
+                    <li className="nav__list--item"><a href="#portfolio" className="nav__list--link" onClick={toggle}>Portfolio</a></li>
                 </ul>
         </Fragment>
     )

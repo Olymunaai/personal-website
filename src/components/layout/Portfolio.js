@@ -32,7 +32,7 @@ const Portfolio = () => {
 
     return (
         <section className="portfolio">
-            <h2 className="portfolio__title section__title">Portfolio of work</h2>
+            <h2 className="portfolio__title section__title" id="portfolio">Portfolio of work</h2>
                 <p className="portfolio__intro">Below is a selection of work that I have built. Click on the picture to see some further information on the project itself. For public projects, there will also be a link included so that you can view the working version of the page.</p>
             <div className="portfolio__container">
                 {projects.map(project => (
@@ -49,7 +49,10 @@ const Portfolio = () => {
             <div className="portfolio__popup" id="portfolio__popup">
                 <div className="portfolio__popup--container">
                 <p className="training__info--close" onClick={clear}>&times;</p>
-                <img className="portfolio__popup--image" src={portfolio.img} alt="project" />
+                <a href={portfolio.link} target="!#">
+                
+                    <img className="portfolio__popup--image" src={portfolio.img} alt="project" />
+                    </a>
                 <div className="portfolio__popup--info-container">
 
                 <h4 className="portfolio__popup--title">{portfolio.title}</h4>
