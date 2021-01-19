@@ -5,14 +5,14 @@ const Portfolio = () => {
     const projects = [
         {
             title: "cartoonbnb",
-            img: "/img/cartoonbnb.JPG",
+            img: "/img/cartoonbnb.jpg",
             info: "The cartoonbnb project was based from websites such as airbnb and other booking companies. The purpose of building this was to learn how to make my own carousel without the use of a style library. It was also a good exercise for using grid, flexbox and media queries. After learning Sass and further CSS techniques, I revisited this project so that I could make some changes to the primary sizing and utilise mixins and variables.",
             link: "https://master.d3dxe4akplo0am.amplifyapp.com/",
             key:1
         },
         {
             title: "TAT Tracker",
-            img: "/img/tattracker.JPG",
+            img: "/img/tattracker.jpg",
             info: "This project was designed and created by me to solve an efficiency problem at work. This is a full MERN stack application and uses Redux for state management, logins are authenticated with JWT and an auth middleware. The application acts as a webform and generates emails with attachments, allowing agents and resources to keep up to take with each others roles. It was created with Materialise as a style library - the primary focus of this project was creating a working solution with a simple UI.",
             link: null,
             key:2

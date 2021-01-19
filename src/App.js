@@ -3,7 +3,7 @@ import Landing from "./components/Landing"
 import Skills from "./components/Skills"
 import Training from "./components/Training"
 import Navigation from "./components/layout/Navigation"
-import Portfolio from "./components/layout/Portfolio"
+import Portfolio from "./components/Portfolio"
 import Footer from "./components/layout/Footer"
 
 
