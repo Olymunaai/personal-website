@@ -37,7 +37,7 @@ const Portfolio = () => {
             <div className="portfolio__container">
                 {projects.map(project => (
                 <div href="#portfolio__popup" className="portfolio__card" onClick={e => clicked(project)} key={project.key}>
-                                    <a href="#portfolio__popup" key={project.key}>
+                    <a href="#portfolio__popup" key={project.key}>
                     <img src={project.img} className="portfolio__card--image" alt="porfolio" />
                     <h5 className="portfolio__card--title">{project.title}</h5></a>
                 </div>
