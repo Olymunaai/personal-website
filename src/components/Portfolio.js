@@ -58,7 +58,7 @@ const Portfolio = () => {
 
                 <div className="portfolio__popup--info-container-2">
                     <div className="portfolio__popup--technology">
-                    <h4 className="portfolio__popup--technology-title">Technologies</h4>
+                    {/* <h4 className="portfolio__popup--technology-title">Technologies</h4> */}
                 <ul className="portfolio__popup--technology-list">
                     {portfolio.technologies.map(technology => (
                     <li className="portfolio__popup--technology-item">
