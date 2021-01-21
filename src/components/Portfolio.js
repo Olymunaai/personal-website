@@ -6,6 +6,7 @@ const Portfolio = () => {
         {
             title: "cartoonbnb",
             img: "/img/bnb.jpg",
+            technologies: ["React js", "Sass", "React-Router-DOM", "Grid", "Flexbox", "Responsive Design"],
             info: "The cartoonbnb project was based from websites such as airbnb and other booking companies. The purpose of building this was to learn how to make my own carousel without the use of a style library. It was also a good exercise for using grid, flexbox and media queries. After learning Sass and further CSS techniques, I revisited this project so that I could make some changes to the primary sizing and utilise mixins and variables.",
             link: "https://master.d3dxe4akplo0am.amplifyapp.com/",
             key:1
@@ -13,7 +14,8 @@ const Portfolio = () => {
         {
             title: "TAT Tracker",
             img: "/img/tattracker.jpg",
-            info: "This project was designed and created by me to solve an efficiency problem at work. This is a full MERN stack application and uses Redux for state management, logins are authenticated with JWT and an auth middleware. The application acts as a webform and generates emails with attachments, allowing agents and resources to keep up to take with each others roles. It was created with Materialise as a style library - the primary focus of this project was creating a working solution with a simple UI.",
+            technologies:["Mongoose", "Express js", "React js", "Node js", "Redux", "Nodemailer", "Multer", "Jason Web Token", "Bcrypt"],
+            info: "This project was designed and created by me to solve an efficiency problem at work. This is a full MERN stack application and uses Redux for state management, logins are authenticated with JWT and an auth middleware. The application acts as a webform and generates emails with attachments, allowing agents and resourcers to keep up to datee with each others roles. It was created with Materialise as a style library - the primary focus of this project was creating a working solution with a simple UI.",
             link: null,
             key:2
         }
@@ -51,14 +53,29 @@ const Portfolio = () => {
                 <p className="training__info--close" onClick={clear}>&times;</p>
                 <a href={portfolio.link} target="!#">
                 
-                    <img className="portfolio__popup--image" src={portfolio.img} alt="project" />
                     </a>
                 <div className="portfolio__popup--info-container">
 
-                <h4 className="portfolio__popup--title">{portfolio.title}</h4>
+                <div className="portfolio__popup--info-container-2">
+                    <div className="portfolio__popup--technology">
+                    <h4 className="portfolio__popup--technology-title">Technologies</h4>
+                <ul className="portfolio__popup--technology-list">
+                    {portfolio.technologies.map(technology => (
+                    <li className="portfolio__popup--technology-item">
+                        {technology}
+                    </li>
+                    ))}
+                </ul>
+                    </div>
+                        <div className="portfolio__popup--info-container-3">
+
                 <p className="portfolio__popup--info">
+                <h4 className="portfolio__popup--title">{portfolio.title}</h4>
+
                     {portfolio.info}
                 </p>
+                        </div>
+                </div>
                 {portfolio.link ? (
                 <p className="portfolio__popup--link" key={portfolio.key}>
                     <strong>This project is available to view via <a href={portfolio.link} target="!#">this link</a>.</strong>

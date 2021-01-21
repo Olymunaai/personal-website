@@ -101,10 +101,50 @@
 
     &--info-container {
       padding: 2rem;
+
+      &-2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      &-3 {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 75%;
+      }
+    }
+
+    &--technology {
+      width: 25%;
+
+      &-title {
+        font-size: 2.5rem;
+      }
+      &-list {
+        width: 100%;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      &-item {
+        font-size: 2rem;
+        padding: 0.5rem;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid
+            $color-grey-dark;
+        }
+      }
     }
 
     &--container {
-      width: 70rem;
+      width: 80rem;
       max-width: 90%;
       height: fit-content;
       background-color: $color-white;
@@ -124,6 +164,8 @@
 
     &--info {
       font-size: 2rem;
+      border-left: 1px solid $color-grey-dark;
+      padding: 0 2rem;
     }
 
     &--link {
