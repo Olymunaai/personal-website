@@ -12,13 +12,21 @@ const Portfolio = () => {
             key:1
         },
         {
-            title: "TAT Tracker",
-            img: "/img/tattracker.jpg",
-            technologies:["Mongoose", "Express js", "React js", "Node js", "Redux", "Nodemailer", "Multer", "Jason Web Token", "Bcrypt"],
-            info: "This project was designed and created by me to solve an efficiency problem at work. This is a full MERN stack application and uses Redux for state management, logins are authenticated with JWT and an auth middleware. The application acts as a webform and generates emails with attachments, allowing agents and resourcers to keep up to datee with each others roles. It was created with Materialise as a style library - the primary focus of this project was creating a working solution with a simple UI.",
-            link: null,
+            title: "Drive Wild",
+            img: "/img/drivewild.jpg",
+            technologies:["React js", "Sass", "Grid", "Responsive Design"],
+            info: "Drive Wild was created as an exercise for both design and using Sass & Flexbox. It's quite a simple project and makes use of a repeating keyframe to simulate lightning for the landing section. Similar to this home page, it makes use of the 'checkbox hack' to manage the burger-style menu and component-level-state to manage pop-ups.",
+            link: "https://master.d11q707co3r4dd.amplifyapp.com/",
             key:2
-        }
+        },
+        // {
+        //     title: "TAT Tracker",
+        //     img: "/img/tattracker.jpg",
+        //     technologies:["Mongoose", "Express js", "React js", "Node js", "Redux", "Nodemailer", "Multer", "Jason Web Token", "Bcrypt"],
+        //     info: "This project was designed and created by me to solve an efficiency problem at work. This is a full MERN stack application and uses Redux for state management, logins are authenticated with JWT and an auth middleware. The application acts as a webform and generates emails with attachments, allowing agents and resourcers to keep up to datee with each others roles. It was created with Materialise as a style library - the primary focus of this project was creating a working solution with a simple UI.",
+        //     link: null,
+        //     key:3
+        // },
     ]
 
     const [portfolio, setPortfolio] = useState()
