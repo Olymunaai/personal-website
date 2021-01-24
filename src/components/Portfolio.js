@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, Fragment} from 'react'
 
 const Portfolio = () => {
 
@@ -9,6 +9,7 @@ const Portfolio = () => {
             technologies: ["React js", "Sass", "React-Router-DOM", "Grid", "Flexbox", "Responsive Design"],
             info: "The cartoonbnb project was based from websites such as airbnb and other booking companies. The purpose of building this was to learn how to make my own carousel without the use of a style library. It was also a good exercise for using grid, flexbox and media queries. After learning Sass and further CSS techniques, I revisited this project so that I could make some changes to the primary sizing and utilise mixins and variables.",
             link: "https://master.d3dxe4akplo0am.amplifyapp.com/",
+            github: "https://github.com/Olymunaai/cartoonbnb",
             key:1
         },
         {
@@ -17,6 +18,7 @@ const Portfolio = () => {
             technologies:["React js", "Sass", "Grid", "Responsive Design"],
             info: "Drive Wild was created as an exercise for both design and using Sass & Flexbox. It's quite a simple project and makes use of a repeating keyframe to simulate lightning for the landing section. Similar to this home page, it makes use of the 'checkbox hack' to manage the burger-style menu and component-level-state to manage pop-ups.",
             link: "https://master.d11q707co3r4dd.amplifyapp.com/",
+            github: "https://github.com/Olymunaai/drivewild",
             key:2
         },
         // {
@@ -85,9 +87,13 @@ const Portfolio = () => {
                         </div>
                 </div>
                 {portfolio.link ? (
+                    <Fragment>
                 <p className="portfolio__popup--link" key={portfolio.key}>
                     <strong>This project is available to view via <a href={portfolio.link} target="!#">this link</a>.</strong>
                 </p>
+                <p className="portfolio__popup--link" key={portfolio.key}>
+                    <strong>Github repository available <a href={portfolio.github} target="!#">here</a>.</strong>
+                </p></Fragment>
                 ) : (
                     <p className="portfolio__popup--link portfolio__popup--link-unavailable">
                     <strong >This project is private and isn't available publicly. If you'd like further information about this project, please get in touch.</strong>
